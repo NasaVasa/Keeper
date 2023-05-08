@@ -9,7 +9,6 @@ services:
       - .env
     container_name: bot
     restart: unless-stopped
-    tty: true
     depends_on:
       - db
     networks:
@@ -21,8 +20,11 @@ services:
       POSTGRES_DB: '${DB_DATABASE}'
       POSTGRES_USER: '${DB_USERNAME}'
       POSTGRES_PASSWORD: '${DB_PASSWORD}'
-    ports:
-      - '5432:5432'
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "${DB_USERNAME}", "-d", "${DB_DATABASE}" ]
+      interval: 10s
+      timeout: 3s
+      retries: 3
     volumes:
       - db-data:/var/lib/postgresql/data
     networks:
