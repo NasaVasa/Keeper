@@ -50,8 +50,9 @@ git clone https://github.com/NasaVasa/Keeper.git
 ```bash
 cd Keeper
 ```
-3. Запустить docker-compose
+3. Создать файл `.env` и заполнить его своими переменными, как в файле `.env.example`
+4. Запустить docker-compose
 ```bash
 docker-compose up -d
 ```
-4. ***Пригласить создателя на собеседование***
+5. ***Пригласить создателя на собеседование***
