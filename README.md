@@ -2,7 +2,7 @@
 
 ### 08.05.2023 - 09.05.2023
 
-### by: [Grachev Vasiliy](nasavasa.ru)
+### by: [Grachev Vasiliy](http://nasavasa.ru)
 
 ## Описание
 
