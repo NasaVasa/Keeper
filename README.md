@@ -4,6 +4,7 @@
 
 ### by: [Grachev Vasiliy](http://nasavasa.ru)
 
+#### [Ссылка на бота](https://t.me/nasavasa_keeper_bot)
 ## Описание
 
 Телеграм-бот позволяет хранить пароли от различных сервисов.
